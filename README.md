@@ -1,11 +1,13 @@
 # Taller #5: Comunicación asíncrona de microservicios y big data con apache kafka. 
-Este taller está dirigido a programadores donde se usa Apache Kafka para desarrollar dos casos de uso: La comunicación asíncrona de microservicios entre aplicaciones productores y consumidores escritos en diferentes plataforma de software como Java, JavaScript y Python. Y el caso de uso kafka streaming para aplicaciones de big data. Ver [presentación].
+Este taller está dirigido a programadores donde se usa Apache Kafka para desarrollar dos casos de uso: La comunicación asíncrona de microservicios entre aplicaciones productores y consumidores escritos en diferentes plataforma de software como Java, JavaScript y Python. Y el caso de uso kafka streaming para aplicaciones de big data. 
 
-Requisitos: Haber desarrollado aplicaciones en cualquier lenguaje de programación
+Requisitos: Haber desarrollado aplicaciones en cualquier lenguaje de programación. Ver [presentación]. Ir a la documentación de [kafka.apache.org]
 
 Por Angel Sullon 
 
 [presentación]:          https://docs.google.com/presentation/d/1VhyWMgbKnxrunyMOvgDa8RT-S6sha9c3pASSYMYCTyM/edit?usp=sharing
+
+[kafka.apache.org]: https://kafka.apache.org/25/documentation/streams/quickstart#quickstart_streams_download
 
 ## Caso de uso 1: Comunicación asíncrona entre productores y consumidores
 
