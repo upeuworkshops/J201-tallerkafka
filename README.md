@@ -67,21 +67,27 @@ Por Angel Sullon
 ## Comando opcionales para crear aplicaciones
 
 ### Code JavaScript (JS)
-	
+	//Runing
 	D:...\J201-tallerkafka\js\js_consumer1>npm install
 	>node index.js
 
-	//Si desea crear de cero	
+	//Si desea crear la aplicación desde cero	
 	D:...\J201-tallerkafka\js\js_consumer1>npm init
 	>npm i --s kafka-node
 	>goto > index.js
 	>node index.js
 
 ### Code Python3 
+	#Runing
 	(base) D:...\J201-tallerkafka\py>pip install kafka-python
 	>python consumer.py
 
-	#Si desea crear de cero
+	#Si desea crear la aplicación desde cero
 	(base) D:...\J201-tallerkafka\py>goto > consumer.py
 	>pip install kafka-python
 	>python consumer.py
+
+### Code Java 
+	// Mejor use NetBeans [netbeans]
+
+[netbeans]:  https://netbeans.apache.org/ 
