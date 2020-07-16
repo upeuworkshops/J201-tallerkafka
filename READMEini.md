@@ -28,12 +28,18 @@ Por Angel Sullon
 	Create topic
 	bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic streams-plaintext-input
 
+	no exec>bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic streams-plaintext-input2
+
 	List topic	
 	bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+
+	no exec>bin\windows\kafka-topics.bat --list --zookeeper localhost:2181
 
 ### Comando para testear el topic por command line
 	Start Producer
 	bin\windows\kafka-console-producer.bat --bootstrap-server localhost:9092 --topic streams-plaintext-input
+
+	no exec>bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic streams-plaintext-input
 
 	Start Consumer
 	bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic streams-plaintext-input --from-beginning
@@ -43,11 +49,14 @@ Por Angel Sullon
 ### Crear un nuevo topic
 	bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic streams-wordcount-output --config cleanup.policy=compact
 
-	Descripción de los topics
+	//no exec>bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic streams-plaintext-input
+
 	bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --describe
 
 ### Inicie un nuevo Consumer
 	bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic streams-wordcount-output --from-beginning --formatter kafka.tools.DefaultMessageFormatter --property print.key=true --property print.value=true --property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer --property value.deserializer=org.apache.kafka.common.serialization.LongDeserializer
+
+	//no exec>bin\windows\kafka-console-producer.bat --bootstrap-server localhost:9092 --topic streams-plaintext-input
 
 ### Inicie un el programa contado de palabra WordCountDemo de java
 	////Runing WordCountDemo class from NetBeans
