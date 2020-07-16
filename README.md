@@ -32,6 +32,7 @@ Por Angel Sullon
 
 	List topic	
 	bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+
 	no exec>bin\windows\kafka-topics.bat --list --zookeeper localhost:2181
 
 ### Comando para testear el topic por command line
@@ -42,20 +43,6 @@ Por Angel Sullon
 
 	Start Consumer
 	bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic streams-plaintext-input --from-beginning
-
-### Code JavaScript (JS)
-	
-	D:...\J201-tallerkafka\js_consumer1>npm install
-	>node index.js
-
-	//Si desea crear de cero	
-	D:...\J201-tallerkafka\js_consumer1>npm init
-	>npm i --s kafka-node
-	>goto > index.js
-	>node index.js
-
-
-
 
 ## Caso de uso 2: Kafka Streams (sobre el caso de uso 1)
 
@@ -72,7 +59,29 @@ Por Angel Sullon
 	//no exec>bin\windows\kafka-console-producer.bat --bootstrap-server localhost:9092 --topic streams-plaintext-input
 
 ### Inicie un el programa contado de palabra WordCountDemo de java
-	////run WordCountDemo class
+	////Runing WordCountDemo class from NetBeans
 	////bin\windows\kafka-run-class.bat org.apache.kafka.streams.examples.wordcount.WordCountDemo
 	////bin\windows\kafka-run-class.bat com.as.kafka.WordCountDemo
 
+
+## Comando opcionales para crear aplicaciones
+
+### Code JavaScript (JS)
+	
+	D:...\J201-tallerkafka\js\js_consumer1>npm install
+	>node index.js
+
+	//Si desea crear de cero	
+	D:...\J201-tallerkafka\js\js_consumer1>npm init
+	>npm i --s kafka-node
+	>goto > index.js
+	>node index.js
+
+### Code Python3 
+	(base) D:...\J201-tallerkafka\py>pip install kafka-python
+	>python consumer.py
+
+	#Si desea crear de cero
+	(base) D:...\J201-tallerkafka\py>goto > consumer.py
+	>pip install kafka-python
+	>python consumer.py
