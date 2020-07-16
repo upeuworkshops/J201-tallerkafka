@@ -88,6 +88,6 @@ Por Angel Sullon
 	>python consumer.py
 
 ### Code Java 
-	// Mejor use NetBeans [netbeans]
+Mejor use NetBeans [netbeans]
 
 [netbeans]:  https://netbeans.apache.org/ 
